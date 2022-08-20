@@ -1,0 +1,88 @@
+<!-- Semantic pada HTML 5 - Berhubungan dengan makna/arti kata
+    Accessibilty, mudah dibaca user
+    Maintainibility, mudah dibaca developer
+    SEO, mudah di baca mesin pencari
+
+    Alasan menulis semantic HTML
+    1.HTML harus ditlis dengan mempresentasikan data yang akan ditampilkan, bukan berdasarkan bagaimana dia ditampilkan (style).
+    2.Memudahkan aksesibilitas, terutama saat menggunakan screen reader
+    3.Lebih mudah mencari & mengelolah code memiliki makna
+    4.Berpengaruh pada SEO, karena semantic HTML dianggap sebagai kunci penting
+
+    Kategori element HTML 5
+    1.Metadata
+    2.Flow
+    3.Sectioning
+    4.Heading
+    5.Phrasing
+    6.Embedded
+    7.Interactive
+-->
+<!-- Perbedaan dengan HTML Sebelumnya -->
+<!-- HTML 4 -->
+<div id="header"></div>
+<div id="sidebar"></div>
+<div class="main">
+    <div class="section">
+        <div class="article">
+            <div class="figure">
+                <img>
+                <div class="figcaption"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer"></div>
+
+<!-- HTML 5 -->
+<header></header>
+<main>
+    <section>
+        <article>
+            <figure>
+                <img>
+                <figcaption></figcaption>
+            </figure>
+        </article>
+    </section>
+</main>
+<footer></footer>
+
+<!-- Contoh semantic element HTML 5
+    <main>
+    <nav>
+    <section> 
+    <header>
+    <footer>
+    <article>
+    <aside>   
+ -->
+ <!-- Contoh penggunaan tag <main> sebaikanya hanya ada 1 disatu halaman kecuali penggunaan tertentu bisa di hide dulu lalu ditampilkan dengan javascript contohnya-->
+<header>Belajar HTML 5</header>
+<main>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt magnam hic quos quod eum veritatis? Ullam incidunt iusto veniam numquam dicta accusamus unde veritatis autem ea totam minus, sunt provident.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea id natus porro ad, fugit dolore, fuga vero nulla, quam quo deserunt voluptates atque consectetur recusandae omnis. Tempora sapiente natus deserunt.</p>
+</main>
+
+<!-- Menambahkan semantic pada script tidak semantic (menambahkab aria)
+menambahkan role-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Semantic HTML</title>
+</head>
+<body>
+    <h1>Welcome to My Site</h1>
+    <div id="navigation" role="navigation" aria-label="my-main-navigation">
+        <h2>navigation Title</h2>
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+    </div>
+</body>
+</html>
